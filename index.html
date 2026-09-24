@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neymar Jr. | Dossier del jugador</title>
+<meta name="description" content="Sitio web educativo sobre la trayectoria, logros y estilo de juego de Neymar Jr.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#inicio" class="logo">NJR<span>.10</span></a>
+    <nav class="nav" id="mainNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#biografia">Biografía</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#logros">Logros</a>
+      <a href="#galeria">Galería</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-number" aria-hidden="true">10</div>
+    <div class="wrap hero-inner">
+      <p class="hero-kicker">Selección de Brasil · Nº 10</p>
+      <h1 class="hero-title">NEYMAR<br>DA SILVA SANTOS JÚNIOR</h1>
+      <p class="hero-sub">Extremo / mediapunta. Nacido el 5 de febrero de 1992 en Mogi das Cruzes, Brasil. Formado en la cantera del Santos FC, es el máximo goleador histórico de la selección brasileña.</p>
+      <a href="#trayectoria" class="btn">Ver trayectoria</a>
+    </div>
+    <svg class="hero-ball" viewBox="0 0 100 100" aria-hidden="true">
+      <circle cx="50" cy="50" r="46" fill="#F4EFE1" stroke="#0E0E0C" stroke-width="3"/>
+      <polygon points="50,20 62,29 57,44 43,44 38,29" fill="#0E0E0C"/>
+      <path d="M50 20 L38 29 M50 20 L62 29 M43 44 L30 55 M57 44 L70 55 M43 44 L50 62 M57 44 L50 62" stroke="#0E0E0C" stroke-width="2.5" fill="none"/>
+    </svg>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>CAMPEÓN DE LA CHAMPIONS LEAGUE 2015</span>
+      <span>ORO OLÍMPICO RÍO 2016</span>
+      <span>MÁXIMO GOLEADOR HISTÓRICO DE BRASIL</span>
+      <span>CAMPEÓN DE LA COPA LIBERTADORES 2011</span>
+      <span>CAMPEÓN DE LA CHAMPIONS LEAGUE 2015</span>
+      <span>ORO OLÍMPICO RÍO 2016</span>
+      <span>MÁXIMO GOLEADOR HISTÓRICO DE BRASIL</span>
+      <span>CAMPEÓN DE LA COPA LIBERTADORES 2011</span>
+    </div>
+  </div>
+
+  <!-- BIOGRAFÍA -->
+  <section class="section bio" id="biografia">
+    <div class="wrap bio-grid">
+      <div class="bio-text">
+        <p class="section-label">01 — Biografía</p>
+        <h2>Del barrio de São Vicente a los grandes escenarios del fútbol mundial</h2>
+        <p>Neymar dio sus primeros pasos futbolísticos en equipos modestos de la periferia de São Paulo antes de entrar en 2003 en la cantera del <strong>Santos FC</strong>, el club donde Pelé se convirtió en leyenda. Debutó con el primer equipo en 2009, con apenas 17 años, y en pocas temporadas pasó de promesa local a una de las figuras más determinantes del fútbol sudamericano.</p>
+        <p>Su salto a Europa en 2013 con el <strong>FC Barcelona</strong> lo situó junto a Messi y Suárez en uno de los tridentes más temidos de la historia reciente. Cuatro años después, su fichaje por el <strong>Paris Saint-Germain</strong> en 2017 rompió el récord mundial de traspasos y lo convirtió en el rostro global del proyecto parisino.</p>
+        <div class="bio-facts">
+          <div><span>2003</span>Ingresa en la cantera del Santos FC</div>
+          <div><span>2009</span>Debut con el primer equipo</div>
+          <div><span>2011</span>Balón de Oro sudamericano</div>
+        </div>
+      </div>
+      <div class="bio-visual" aria-hidden="true">
+        <svg viewBox="0 0 220 300" class="jersey">
+          <path d="M40 30 L80 10 Q110 25 140 10 L180 30 L200 65 L175 80 L165 60 L165 280 L55 280 L55 60 L45 80 L20 65 Z" fill="#FFC629" stroke="#0E0E0C" stroke-width="3"/>
+          <rect x="55" y="60" width="110" height="14" fill="#16305C"/>
+          <text x="110" y="180" text-anchor="middle" font-family="Anton" font-size="90" fill="#16305C">10</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAYECTORIA -->
+  <section class="section trayectoria" id="trayectoria">
+    <div class="wrap">
+      <p class="section-label">02 — Trayectoria</p>
+      <h2>Una carrera repartida entre tres continentes</h2>
+      <p class="section-intro">Cada etapa de su carrera responde a un momento distinto: la formación en Brasil, la consagración en España, el proyecto ambicioso en Francia, la aventura saudí y el regreso a casa. Pulsa cada club para ver el detalle.</p>
+
+      <div class="timeline" id="timeline">
+        <button class="timeline-item active" data-club="santos1">
+          <span class="timeline-year">2009–2013</span>
+          <span class="timeline-club">Santos FC</span>
+        </button>
+        <button class="timeline-item" data-club="barcelona">
+          <span class="timeline-year">2013–2017</span>
+          <span class="timeline-club">FC Barcelona</span>
+        </button>
+        <button class="timeline-item" data-club="psg">
+          <span class="timeline-year">2017–2023</span>
+          <span class="timeline-club">Paris Saint-Germain</span>
+        </button>
+        <button class="timeline-item" data-club="hilal">
+          <span class="timeline-year">2023–2025</span>
+          <span class="timeline-club">Al-Hilal</span>
+        </button>
+        <button class="timeline-item" data-club="santos2">
+          <span class="timeline-year">2025–actualidad</span>
+          <span class="timeline-club">Santos FC</span>
+        </button>
+      </div>
+
+      <div class="timeline-detail" id="timelineDetail">
+        <p data-detail="santos1" class="detail active">Su etapa formativa y de explosión. Ganó la Copa Libertadores 2011 y el Balón de Oro sudamericano en tres ocasiones consecutivas, consolidándose como la gran perla del fútbol brasileño.</p>
+        <p data-detail="barcelona" class="detail">Llegó para formar el tridente ofensivo con Messi y Suárez. Con el Barça ganó la Champions League 2015 completando un triplete histórico, además de Ligas y Copas del Rey.</p>
+        <p data-detail="psg" class="detail">Su traspaso rompió el récord mundial de fichajes. En París encadenó títulos de Ligue 1 y Copa de Francia, aunque las lesiones condicionaron parte de esta etapa.</p>
+        <p data-detail="hilal" class="detail">Dio el salto a la Liga Saudí en una operación que marcó la creciente relevancia económica de la competición, combinando su rol de estrella con la representación de Brasil.</p>
+        <p data-detail="santos2" class="detail">El regreso al club que lo vio nacer futbolísticamente, cerrando el círculo de una carrera que comenzó en la misma cantera casi dos décadas antes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section class="section habilidades" id="habilidades">
+    <div class="wrap">
+      <p class="section-label">03 — Habilidades</p>
+      <h2>Un futbolista definido por el desequilibrio</h2>
+      <div class="skills" id="skills">
+        <div class="skill" data-value="96"><div class="skill-head"><span>Regate</span><em>0%</em></div><div class="bar"><i></i></div></div>
+        <div class="skill" data-value="90"><div class="skill-head"><span>Definición</span><em>0%</em></div><div class="bar"><i></i></div></div>
+        <div class="skill" data-value="88"><div class="skill-head"><span>Visión de juego</span><em>0%</em></div><div class="bar"><i></i></div></div>
+        <div class="skill" data-value="85"><div class="skill-head"><span>Velocidad</span><em>0%</em></div><div class="bar"><i></i></div></div>
+        <div class="skill" data-value="89"><div class="skill-head"><span>Tiros libres</span><em>0%</em></div><div class="bar"><i></i></div></div>
+        <div class="skill" data-value="82"><div class="skill-head"><span>Asistencias</span><em>0%</em></div><div class="bar"><i></i></div></div>
+      </div>
+      <p class="skills-note">*Valoraciones ilustrativas con fines de diseño, no proceden de una fuente estadística oficial.</p>
+    </div>
+  </section>
+
+  <!-- LOGROS -->
+  <section class="section logros" id="logros">
+    <div class="wrap">
+      <p class="section-label">04 — Logros</p>
+      <h2>Palmarés destacado</h2>
+      <div class="bento">
+        <div class="bento-card big">
+          <strong>+400</strong>
+          <span>goles como profesional entre clubes y selección</span>
+        </div>
+        <div class="bento-card">
+          <strong>1</strong>
+          <span>Champions League (Barcelona, 2015)</span>
+        </div>
+        <div class="bento-card">
+          <strong>1</strong>
+          <span>Copa Libertadores (Santos, 2011)</span>
+        </div>
+        <div class="bento-card">
+          <strong>🥇</strong>
+          <span>Oro olímpico con Brasil, Río 2016</span>
+        </div>
+        <div class="bento-card">
+          <strong>3x</strong>
+          <span>Balón de Oro sudamericano</span>
+        </div>
+        <div class="bento-card wide">
+          <strong>Récord</strong>
+          <span>Máximo goleador histórico de la selección brasileña, superando a Pelé</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="section galeria" id="galeria">
+    <div class="wrap">
+      <p class="section-label">05 — Galería</p>
+      <h2>Identidad visual</h2>
+      <p class="section-intro">Ilustraciones propias inspiradas en su etapa en cada club — sin usar fotografías con derechos de terceros.</p>
+      <div class="gallery">
+        <figure class="g-card" style="--c:#0B2B22"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="#FFC629" stroke-width="4"/><text x="50" y="60" text-anchor="middle" font-family="Anton" font-size="34" fill="#FFC629">SFC</text></svg><figcaption>Santos FC — Los inicios</figcaption></figure>
+        <figure class="g-card" style="--c:#16305C"><svg viewBox="0 0 100 100"><rect x="20" y="20" width="60" height="60" fill="none" stroke="#F4EFE1" stroke-width="4"/><text x="50" y="60" text-anchor="middle" font-family="Anton" font-size="30" fill="#F4EFE1">FCB</text></svg><figcaption>FC Barcelona — La consagración</figcaption></figure>
+        <figure class="g-card" style="--c:#5A1E33"><svg viewBox="0 0 100 100"><polygon points="50,15 85,50 50,85 15,50" fill="none" stroke="#FFC629" stroke-width="4"/><text x="50" y="58" text-anchor="middle" font-family="Anton" font-size="26" fill="#FFC629">PSG</text></svg><figcaption>Paris Saint-Germain — El proyecto global</figcaption></figure>
+        <figure class="g-card" style="--c:#0E4D3C"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="35" fill="none" stroke="#F4EFE1" stroke-width="4"/><polygon points="50,25 60,45 82,45 64,58 71,80 50,67 29,80 36,58 18,45 40,45" fill="#F4EFE1"/></svg><figcaption>Al-Hilal — Nueva etapa</figcaption></figure>
+        <figure class="g-card wide" style="--c:#0E0E0C"><svg viewBox="0 0 200 100"><text x="100" y="65" text-anchor="middle" font-family="Anton" font-size="60" fill="#FFC629">BRASIL</text></svg><figcaption>Selección de Brasil — El dorsal 10</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>Proyecto educativo realizado con HTML, CSS y JavaScript. Sitio de carácter informativo y no oficial, sin vínculo con el jugador ni sus clubes.</p>
+    <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
